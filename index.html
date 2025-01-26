@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="light">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <header class="header">
+        <nav class="container">
+            <div class="nav-wrapper">
+                <a href="#home" class="logo"> My Portfolio</a>
+                
+                <button class="mobile-menu-btn" aria-label="Toggle menu">
+                    <i data-lucide="menu"></i>
+                </button>
+
+                <div class="nav-links">
+                    <a href="#about">About</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#contact">Contact</a>
+                    <a href="assets\Amit_Resume.pdf" class="btn-primary" target="_blank" rel="noopener noreferrer">Resume</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="about" class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1>Hi, I'm <span class="text-accent">Amit Chandajkar</span></h1><br>
+                        <h3>BSC CS Student</h3>
+                        <p>A passionate software developer specializing in full-stack web development.
+                           I create elegant solutions to complex problems.</p>
+                        <div class="social-links">
+                            <a href="https://github.com/Amit2384" target="_blank" rel="noopener noreferrer" class="social-btn github">
+                                <i data-lucide="github"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/amit-chandajkar-b59427321/" target="_blank" rel="noopener noreferrer" class="social-btn linkedin">
+                                <i data-lucide="linkedin"></i>
+                            </a>
+                            <a href="mailto:amitchandajkar23@gmail.com" class="social-btn mail">
+                                <i data-lucide="mail"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="hero-image">
+                        <img src="assets\profile.jpg" 
+                             alt="Profile" />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects">
+            <div class="container">
+                <h2>Featured Projects</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <img src="assets\face-recognition.jpg"  alt="Face-Recognition-Attendance" />
+                        <div class="project-content">
+                            <h3>Smart Attendence system using face recognition</h3>
+                            <p>It includes real-time face detection, automated attendance tracking, and CSV export functionality for attendance records.</p>
+                            <div class="tech-stack">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                                <span>Python</span>
+                                <span>SQLlite</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/Amit2384/Face-Rec-Attendance" target="_blank" rel="noopener noreferrer">
+                                    <i data-lucide="github"></i>
+                                    <span>Code</span>
+                                </a>
+                                <a href="https://demo.com" target="_blank" rel="noopener noreferrer">
+                                    <i data-lucide="external-link"></i>
+                                    <span>Demo</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=800&q=80" 
+                             alt="Student-Score-Analysis" />
+                        <div class="project-content">
+                            <h3>Student score analysis</h3>
+                            <p>A comprehensive student performance analysis system that processes and visualizes academic data. Features include statistical analysis of scores, performance trends, and automated report generation for individual and class-wide assessments.</p>
+                            <div class="tech-stack">
+                               <span>Python</span>
+                               <span>Pandas</span>
+                               <span>Matplotlib</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/Amit2384/Data-Analysis-project" target="_blank" rel="noopener noreferrer">
+                                    <i data-lucide="github"></i>
+                                    <span>Code</span>
+                                </a>
+                                <a href="https://demo.com" target="_blank" rel="noopener noreferrer">
+                                    <i data-lucide="external-link"></i>
+                                    <span>Demo</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <img src="assets\netflix.jpg" 
+                             alt="Netflix-Clone" />
+                        <div class="project-content">
+                            <h3>Nextflix Clone</h3>
+                            <p>A Nextflix Clone built with HTML, CSS </p>
+                            <div class="tech-stack">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/Amit2384/Netflix-Clone" target="_blank" rel="noopener noreferrer">
+                                    <i data-lucide="github"></i>
+                                    <span>Code</span>
+                                </a>
+                                <a href="https://demo.com" target="_blank" rel="noopener noreferrer">
+                                    <i data-lucide="external-link"></i>
+                                    <span>Demo</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills">
+            <div class="container">
+                <h2>Skills & Technologies</h2>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <div class="skill-header">
+                            <div class="skill-icon">
+                                <i data-lucide="globe"></i>
+                            </div>
+                            <h3>Frontend Development</h3>
+                        </div>
+                        <div class="skill-tags">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span>
+                            <span>React</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <div class="skill-header">
+                            <div class="skill-icon">
+                                <i data-lucide="terminal"></i>
+                            </div>
+                            <h3>Backend Development</h3>
+                        </div>
+                        <div class="skill-tags">
+                            <span>Python</span>
+                            <span>Basic Postman API</span>
+                            
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <div class="skill-header">
+                            <div class="skill-icon">
+                                <i data-lucide="database"></i>
+                            </div>
+                            <h3>Database</h3>
+                        </div>
+                        <div class="skill-tags">
+                            <span>MongoDB</span>
+                            <span>MySQL</span>
+                            <span>SQLlite</span>
+                        </div>
+                    </div>
+
+                    <!-- <div class="skill-category">
+                        <div class="skill-header">
+                            <div class="skill-icon">
+                                <i data-lucide="code"></i>
+                            </div>
+                            <h3>Tools & Others</h3>
+                        </div>
+                        <div class="skill-tags">
+                            <span>Git</span>
+                            <span>Docker</span>
+                            <span>AWS</span>
+                            <span>Linux</span>
+                            <span>Agile</span>
+                            <span>CI/CD</span>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2>Get in Touch</h2>
+                <div class="contact-content">
+                    <form id="contact-form" class="contact-form" onsubmit="sendEmail(event)">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary">
+                            <i data-lucide="send"></i>
+                            <span>Send Message</span>
+                        </button>
+                    </form>
+
+                    <div class="contact-info">
+                        <a href="mailto:amitchandajkar23@gmail.com" class="contact-link">
+                            <i data-lucide="mail"></i>
+                            <span>amitchandajkar23@gmail.com</span>
+                        </a>
+                        <a href="tel:+918180014933" class="contact-link">
+                            <i data-lucide="message-square"></i>
+                            <span>+91 8180014933</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="current-year"></span> Amit Chandajkar. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
