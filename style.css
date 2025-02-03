@@ -196,7 +196,8 @@
     }
 
     .project-card {
-        background:linear-gradient(to bottom, var(--bg-secondary), var(--bg-primary));
+        /* background:linear-gradient(to bottom, var(--bg-secondary), var(--bg-primary)); */
+        background: #FFE5B4;
         border-radius: 1rem;
         overflow: hidden;
         box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
@@ -228,7 +229,8 @@
     }
 
     .tech-stack span {
-        background:linear-gradient(to bottom, var(--bg-secondary), var(--bg-primary));
+        /* background:linear-gradient(to bottom, var(--bg-secondary), var(--bg-primary)); */
+        background: #fdf0da;
         padding: 0.25rem 0.75rem;
         border-radius: 9999px;
         font-size: 0.875rem;
@@ -266,7 +268,8 @@
     }
 
     .skill-category {
-        background: linear-gradient(to top, var(--bg-secondary), var(--bg-primary));
+        /* background: linear-gradient(to top, var(--bg-secondary), var(--bg-primary)); */
+        background: #FFE5B4;
         padding: 1.5rem;
         border-radius: 1rem;
         transition: var(--transition);
@@ -290,7 +293,8 @@
         justify-content: center;
         width: 2.5rem;
         height: 2.5rem;
-        background: linear-gradient(to bottom, var(--bg-secondary), var(--bg-primary));
+        /* background: linear-gradient(to bottom, var(--bg-secondary), var(--bg-primary)); */
+        background: #fdf0da;
         border-radius: 0.5rem;
     }
 
@@ -301,11 +305,13 @@
     }
 
     .skill-tags span {
-        background: linear-gradient(to bottom, var(--bg-secondary), var(--bg-primary));;
+        /* background: linear-gradient(to bottom, var(--bg-secondary), var(--bg-primary));*/
+        background: #fdf0da;
         padding: 0.25rem 0.75rem;
         border-radius: 9999px;
         font-size: 0.875rem;
         color: var(--text-secondary);
+        backdrop-filter: blur(5px);
         box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
     }
 
