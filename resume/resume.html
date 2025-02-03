@@ -4,10 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Amit Chandajkar - Resume</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="resume.css">
+    <!-- Removed jsPDF CDN -->
 </head>
 <body>
-    <div class="container">
+  <button id="downloadPdf" class="download-icon-button">
+     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+        <polyline points="7 10 12 15 17 10"></polyline>
+        <line x1="12" y1="15" x2="12" y2="3"></line>
+    </svg>
+ </button>
+  <div class="container">
         <header>
             <h1>Amit Chandajkar</h1>
             <p>8180014933 | <a href="mailto:amitchandajkar23@gmail.com">amitchandajkar23@gmail.com</a></p>
@@ -15,11 +23,11 @@
 
        <div class="top-info">
            <div class="dob">
-              <p>DOB: 23 Aug 2004</p>
+              <p>DoB: 23 Aug 2004</p>
             </div>
           <div class="links">
-               <a href="https://www.linkedin.com/in/amit-chandajkar-b59427321/" target="_blank">LinkedIn</a>
-             <a href="https://github.com/Amit2384" target="_blank">Github</a>
+               <a href="#">LinkedIn</a>
+             <a href="#">Github</a>
            </div>
            <div class="location">
               <p>Chh. Sambhajinagar</p>
@@ -43,8 +51,8 @@
 
         <section class="skills">
           <h2>Skills</h2>
-          <!-- <button id="toggleSkills">Show/Hide Skills</button> -->
-           <ul id="skillsList" >
+          <button id="toggleSkills">Show/Hide Skills</button>
+           <ul id="skillsList" style="display:none;">
                 <li>HTML, CSS, JS</li>
                 <li>Postman API</li>
                 <li>MongoDB</li>
@@ -83,6 +91,6 @@
              <p>Amit Chandajkar</p>
         </footer>
     </div>
-    <script src="script.js"></script>
+    <script src="resume.js"></script>
 </body>
 </html>
