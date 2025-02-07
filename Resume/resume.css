@@ -1,45 +1,34 @@
+
 body {
     font-family: Arial, sans-serif;
-    /* margin: 10px; */
-    padding-bottom: 10px 0;
+    margin: 0;
+    padding: 0;
     background-color: #f4f4f4;
-    overflow: hidden; /* Prevents unnecessary scrolling */
 }
 
-/* Resume Container */
 .resume-container {
     display: flex;
     max-width: 1000px;
-    height: 100vh; /* Full viewport height */
-    margin: 0 auto;
+    margin: 20px auto;
     background: #f3ede6;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    overflow: hidden; /* Prevents unnecessary scrolling */
 }
 
 .email{
     overflow-wrap: break-word;
 }
 
-/* Sidebar */
 .sidebar {
     width: 30%;
     background: linear-gradient(to bottom, rgba(10, 15, 44, 0.916), rgba(13, 30, 79, 0.893));
+    
     color: white;
     padding: 20px;
-    overflow-y: auto; /* Enables scrolling */
-    scrollbar-width: none; /* Hides scrollbar for Firefox */
-    -ms-overflow-style: none; /* Hides scrollbar for IE/Edge */
 }
 
-/* Hide scrollbar for WebKit browsers (Chrome, Safari) */
-.sidebar::-webkit-scrollbar {
-    display: none;
-}
-
-/* Sidebar Headings */
 .sidebar h1, .sidebar h2 {
     color: #f39c12;
+    overflow-wrap: break-word;
 }
 
 .sidebar ul {
@@ -56,21 +45,11 @@ body {
     text-decoration: none;
 }
 
-/* Content */
 .content {
     width: 70%;
     padding: 20px;
-    overflow-y: auto; /* Enables scrolling */
-    scrollbar-width: none; /* Hides scrollbar for Firefox */
-    -ms-overflow-style: none; /* Hides scrollbar for IE/Edge */
 }
 
-/* Hide scrollbar for WebKit browsers (Chrome, Safari) */
-.content::-webkit-scrollbar {
-    display: none;
-}
-
-/* Section Headers */
 .content h2 {
     color: #2c3e50;
     border-bottom: 2px solid #f39c12;
@@ -85,11 +64,10 @@ body {
     line-height: 1.5;
 }
 
-/* Download Button */
 .download-icon-button {
     position: absolute;
-    top: 10px;
-    right: 10px;
+     top: 10px;
+     right: 10px;
     background-color: transparent;
     border: none;
     cursor: pointer;
@@ -97,76 +75,9 @@ body {
     transition: transform 0.3s ease;
     outline: none;
 }
-
-.download-icon-button:hover {
+.download-icon-button:hover{
     transform: scale(1.2);
 }
-
-.download-icon-button svg {
-    fill: #007bff;
-}
-
-/* Responsive Design */
-@media screen and (max-width: 768px) {
-    .resume-container {
-        max-width: 100%;
-        height: 100vh;
-        flex-wrap: nowrap;
-    }
-
-    .sidebar {
-        width: 35%;
-        padding: 15px;
-    }
-
-    .content {
-        width: 65%;
-        padding: 15px;
-    }
-
-    .download-icon-button {
-        top: 5px;
-        right: 5px;
-    }
-
-    .sidebar h1 {
-        font-size: 20px;
-    }
-
-    .sidebar h2, .content h2 {
-        font-size: 18px;
-    }
-
-    .sidebar ul li {
-        font-size: 14px;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .sidebar {
-        width: 40%;
-        padding: 10px;
-    }
-
-    .content {
-        width: 60%;
-        padding: 10px;
-    }
-
-    .sidebar h1 {
-        font-size: 18px;
-    }
-
-    .sidebar h2, .content h2 {
-        font-size: 16px;
-    }
-
-    .sidebar ul li {
-        font-size: 12px;
-    }
-
-    .download-icon-button svg {
-        width: 20px;
-        height: 20px;
-    }
+.download-icon-button svg{
+  fill: #007bff;
 }
